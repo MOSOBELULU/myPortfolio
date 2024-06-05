@@ -1,4 +1,10 @@
 import NavBar from './Components/layout/NavBar'
+import Home from './sections/Home'
+import About from './sections/About'
+import Projects from './sections/Projects'
+import EducationSection from './sections/EducationSection'
+import SkillSection from './sections/SkillSection'
+import Contact from './sections/Contact'
 import './App.css'
 
 function App() {
@@ -8,6 +14,12 @@ function App() {
     <>
       <div>
         <NavBar />
+        <Home />
+        <About />
+        <Projects />
+        <EducationSection />
+        <SkillSection />
+        <Contact />
        </div>
     </>
   )
