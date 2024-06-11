@@ -40,11 +40,11 @@
   }
 
   .headerSection h1{
-    color: rgb(250, 246, 246)
+    color: rgb(0, 0, 0)
   }
   .headerSection h2{
     font-size: 25px;
-    color: rgb(250, 246, 246)
+    color: rgb(8, 8, 8)
   }
   
   .profileDescription {
@@ -54,14 +54,14 @@
     flex-direction: column;
     width: 70%;
     padding: 10px;
-    opacity: 0;
+    /* opacity: 0;
     transform: translateY(-110px);
-    transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out; */
   }
 
   .profileDescription h2 {
     font-size: 16px; 
-    color: rgb(250, 246, 246);
+    color: rgb(0, 0, 0);
   }
 
   .icons {
@@ -72,51 +72,51 @@
   .icons img {
     width: 30px;
     height: 30px; 
-    color: rgba(20, 20, 20);
-    transition: all 0.5s ease-in-out;
+    color: rgb(201, 12, 12);
+    /* transition: all 0.5s ease-in-out; */
   }
   
-  .profileCard:hover {
+  /* .profileCard:hover {
     transform: scale(1.1);
     border-radius: 10px 10px 10px 10px;
     background: rgba(255, 255, 255, 0.499);
     color: black;
-  }
+  } */
   
-  .headerSection:hover h1{
+  /* .headerSection:hover h1{
     color: black;
-  }
+  } */
 
-  .profileCard:hover .profilePicture {
+  /* .profileCard:hover .profilePicture {
     transform: translate(-150px, -50px);
     height: 120px;
     width: 120px;
     background: purple;
-  }
+  } */
   
-  .profileCard:hover .headerSection {
+  /* .profileCard:hover .headerSection {
     transform: translate(0px, -80px);
   }
   .profileCard:hover .headerSection h2{
     color: black;
     margin-bottom: 5px;
-  }
+  } */
   
-  .profileCard:hover .profileDescription {
+  /* .profileCard:hover .profileDescription {
     opacity: 1;
     padding: auto;
   }
   .profileCard:hover .profileDescription h2 {
     color: black;
-  }
+  } */
   
-  .icons img:hover {
+  /* .icons img:hover {
     color: rgb(173, 47, 47);
     transform: scale(1.2);
     animation: shake 0.5s ease-in-out forwards;
-  }
+  } */
   
-  @keyframes shake {
+  /* @keyframes shake {
     0% {
       transform: translateX(0);
     }
@@ -133,6 +133,6 @@
       transform: translateX(0);
     }
   }
-  
+   */
  
   

@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className={classes.section} id='Home'>
     <div className={classes.centeredContainer}>
-      <div className={classes.profileCard}>
+      <div >
         <img
           src="/images/WhatsApp Image 2023-10-16 at 19.45.40_e43ddf9f.jpg"
           className={classes.profilePicture}
