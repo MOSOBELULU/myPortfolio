@@ -1,4 +1,9 @@
 /* CSS for Home.module.css */
+.section{
+  padding: 20px;
+  margin: 20px 0;
+  border-bottom: 2px solid #070707;
+}
 .centeredContainer {
     display: flex;
     justify-content: center;

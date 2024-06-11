@@ -6,20 +6,19 @@ export default function NavBar() {
         <div>
       <header className={classes.header}>
         <nav className={classes.nav}>
-            <ul>
-                <li>
+                <a href='#Home'>
                     Home
-                </li>
-                <li>
+                </a>
+                <a href='#About'>
                     About
-                </li>
-                <li>
+                </a>
+                <a href='#Projects'>
                     Projects
-                </li>
-                <li>
+                </a>
+                <a href='Contact'>
                     Contact
-                </li>
-            </ul>
+                </a>
+            
         </nav>
       </header>
     </div>

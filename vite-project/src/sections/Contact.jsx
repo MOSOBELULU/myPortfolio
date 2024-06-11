@@ -2,9 +2,11 @@ import classes from './Contact.module.css'
 
 export default function Contact() {
   return (
-    <div className={classes.container}>
-      <h1 className={classes.heading}>Contact Me</h1>
+    <div className={classes.container} id='Contact'>
+      <h1 className={classes.heading}>Get In Touch With Me</h1>
       <a href="mailto:mosobelulu@gmail.com">mosobelulu@gmail.com</a>
+      <p> Call me on: +27 76 527 5896</p>
+      <p>Or Simply fill Out the Form Below</p>
       <form className={classes.form} action="https://formsubmit.co/mosobelulu@gmail.com" method="POST" >
 <div className={classes.control}>
     <label htmlFor='name'>Name</label>

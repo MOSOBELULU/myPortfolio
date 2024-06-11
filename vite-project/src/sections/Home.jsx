@@ -4,6 +4,7 @@ import classes from "./Home.module.css";
 
 export default function Home() {
   return (
+    <div className={classes.section} id='Home'>
     <div className={classes.centeredContainer}>
       <div className={classes.profileCard}>
         <img
@@ -60,6 +61,7 @@ export default function Home() {
         </div>
       </div>
     
+    </div>
     </div>
   );
 }
