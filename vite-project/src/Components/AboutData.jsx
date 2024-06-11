@@ -1,12 +1,7 @@
 import classes from "./AboutData.module.css";
 
 function AboutData() {
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/pdf-file/Junior Software Developer - Lulu.pdf";
-    link.download = "Mosobe Lulu Resume";
-    link.click();
-  };
+ 
 
   return (
     <div className={classes.AboutData}>
@@ -21,7 +16,7 @@ function AboutData() {
      
         <h2>Skills</h2>
     
-      <button onClick={handleDownload}>Download My Resume</button>
+      
       </div>
     </div>
   );
