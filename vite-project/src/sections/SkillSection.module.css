@@ -1,0 +1,100 @@
+/* CSS for SkillSection.module.css */
+.SkillSection {
+  padding: 40px;
+  background-color: #c266d4;
+  color: #fff;
+  text-align: center;
+}
+
+.SkillHeading {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.SkillList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.SkillItem {
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  padding: 20px;
+}
+
+.SkillItem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.SkillContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.SkillLeft {
+  flex: 1;
+}
+
+.SkillCategory {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.SkillSubList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Skill {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: #d1d1d1;
+}
+
+.SkillRight {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.SkillImage {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .SkillContent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .SkillList {
+    grid-template-columns: 1fr;
+  }
+  .SkillItem {
+    flex-basis: calc(50% - 20px);
+  }
+  .SkillRight {
+    margin-top: 20px;
+  }
+}
+
+/* Reorder items for desired layout */
+.SkillItem:nth-child(3),
+.SkillItem:nth-child(4) {
+  grid-column: span 2, 2; /* Make these items span two columns */
+}

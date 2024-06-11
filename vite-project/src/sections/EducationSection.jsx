@@ -9,9 +9,11 @@ import classes from './EducationSection.module.css'
             {educationData.map((item, index) => (
               <li key={index} className={classes.EducationItem}>
                    {/* {item.ImageUrl && <img src={item.ImageUrl} alt={item.Institution} className={classes.img} />} */}
+                   <div>
                 <h3>{item.Institution}</h3>
                 <p className={classes.Qualification}>{item.Qualification}</p>
                 <p className={classes.Duration}>{item.Duration}</p>
+                   </div>
               </li>
             ))}
           </ul>

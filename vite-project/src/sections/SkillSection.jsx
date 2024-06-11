@@ -1,54 +1,50 @@
 import { skillsData } from "../Components/DummyData";
-import classes from './SkillSection.module.css'
-function SkillSection() {
+import classes from './SkillSection.module.css';
 
-    const images = {
-      TechnicalSkills: '../../public/images/skillpage.png',
-      Frameworks: '../../public/images/frameworks.png',
-      Database: '../../public/images/Database.png',
-      SoftSkills: '../../public/images/softskills.png'
-    };
-  
-    return (
-      <div className={classes.SkillPage}>
-        <h1 className={classes.SkillHeading}>Skills</h1>
-        <div className={classes.SkillsContent}>
-          <div className={classes.SkillsListContainer}>
-            {Object.keys(skillsData).map((category, index) => (
-              <div key={index} className={classes.SkillsCategory}>
-                <div className={classes.CategoryContent}>
-                  <div className={classes.CategoryLeft}>
-                    <h2 className={classes.Category}>
-                      {category === 'TechnicalSkills'
-                        ? 'Technical Skills'
-                        : category === 'SoftSkills'
-                        ? 'Soft Skills'
-                        : category}
-                    </h2>
-                    <ul className={classes.SkillsList}>
-                      {skillsData[category].map((skill, skillIndex) => (
-                        <li key={skillIndex} className={classes.SkillItem}>
-                          {skill}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className={classes.CategoryRight}>
-                    <img
-                      src={images[category]}
-                      className={classes.CategoryImage}
-                      alt={`${category} image`}
-                    />
-                  </div>
-                </div>
+function SkillSection() {
+  const images = {
+    TechnicalSkills: '/images/skillpage.png',
+    Frameworks: '/images/frameworks.png',
+    Database: '/images/Database.png',
+    SoftSkills: '/images/softskills.png'
+  };
+
+  return (
+    <div className={classes.SkillSection}>
+      <h1 className={classes.SkillHeading}>Skills</h1>
+      <ul className={classes.SkillList}>
+        {Object.keys(skillsData).map((category, index) => (
+          <li key={index} className={classes.SkillItem}>
+            <div className={classes.SkillContent}>
+              <div className={classes.SkillLeft}>
+                <h2 className={classes.SkillCategory}>
+                  {category === 'TechnicalSkills'
+                    ? 'Technical Skills'
+                    : category === 'SoftSkills'
+                    ? 'Soft Skills'
+                    : category}
+                </h2>
+                <ul className={classes.SkillSubList}>
+                  {skillsData[category].map((skill, skillIndex) => (
+                    <li key={skillIndex} className={classes.Skill}>
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
               </div>
-            ))}
-          </div>
-        </div>
-        
-      </div>
-    );
-  }
-  
-  export default SkillSection;
-  
+              <div className={classes.SkillRight}>
+                <img
+                  src={images[category]}
+                  className={classes.SkillImage}
+                  alt={`${category} image`}
+                />
+              </div>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default SkillSection;
