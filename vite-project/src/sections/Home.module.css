@@ -1,9 +1,10 @@
 /* CSS for Home.module.css */
+
 .section {
-  padding: 20px;
-  margin: 20px 0;
-  background-color: #1c1c1c; /* Dark background color */
-  color: #fff; /* White text color */
+  margin:  0;
+  background-color: #1c1c1c; 
+  /* border-radius: 20px 20px 10px 50px; */
+  color: #fff;
 }
 
 .centeredContainer {
@@ -91,5 +92,5 @@
 }
 
 .iconlink img {
-  filter: invert(1); /* Makes icons white */
+  filter: invert(1);
 }

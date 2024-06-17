@@ -1,6 +1,6 @@
 
-section {
-    padding: 20px;
-    margin: 20px 0;
-    border-bottom: 2px solid #aa1010;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }

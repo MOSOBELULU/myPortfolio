@@ -1,4 +1,9 @@
 import classes from './NavBar.module.css'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { faHouse} from '@fortawesome/free-solid-svg-icons'
+import { faUser} from '@fortawesome/free-solid-svg-icons'
+import { faCode} from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope} from '@fortawesome/free-solid-svg-icons'
 
 
 export default function NavBar() {
@@ -6,17 +11,18 @@ export default function NavBar() {
         <div>
       <header className={classes.header}>
         <nav className={classes.nav}>
-                <a href='#Home'>
-                    Home
+                <a href='#Home' >
+                <FontAwesomeIcon icon={faHouse} />
+                Home
                 </a>
                 <a href='#About'>
-                    About
+                <FontAwesomeIcon icon={faUser} /> About
                 </a>
                 <a href='#Projects'>
-                    Projects
+                <FontAwesomeIcon icon={faCode} />   Projects
                 </a>
                 <a href='Contact'>
-                    Contact
+                <FontAwesomeIcon icon={faEnvelope} />   Contact
                 </a>
             
         </nav>

@@ -1,14 +1,14 @@
 /* NavBar.module.css */
 .header {
-    background-color: #333;
+   
     padding: 1rem 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
   }
   
   .nav {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
   }
   
   .nav a {
@@ -20,6 +20,6 @@
   }
   
   .nav a:hover {
-    color: #ff6347; /* Tomato color for hover effect */
+    color: #ff6347; 
   }
   
