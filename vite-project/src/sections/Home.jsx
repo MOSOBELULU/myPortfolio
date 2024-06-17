@@ -24,8 +24,8 @@ export default function Home() {
               and NextJs make me a valuable asset to any software development
               project.
             </p>
-            <div className={classes.buttons}>
-            <button onClick={handleDownload}>Download My Resume</button>
+            <div >
+            <button onClick={handleDownload} className={classes.buttons}>Download My Resume</button>
             </div>
           </div>
         </div>

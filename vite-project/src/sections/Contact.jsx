@@ -24,7 +24,7 @@ export default function Contact() {
 </div>
 
 <div className={classes.actions}>
-    <button>Contact Me</button>
+    <button>Submit</button>
 </div>
         </form>
     </div>

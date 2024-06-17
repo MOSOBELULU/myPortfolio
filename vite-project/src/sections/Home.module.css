@@ -2,7 +2,6 @@
 
 .section {
   margin:  0;
-  background-color: #1c1c1c; 
   /* border-radius: 20px 20px 10px 50px; */
   color: #fff;
 }
@@ -10,7 +9,7 @@
 .centeredContainer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content:space-evenly;
   min-height: 100vh;
   padding: 20px;
 }
@@ -47,8 +46,9 @@
   gap: 1rem;
 }
 
-.primaryButton,
-.secondaryButton {
+.buttons {
+  background-color: #007bff;
+  color: #f8f6f6;
   padding: 10px 20px;
   font-size: 1rem;
   border: none;
@@ -56,16 +56,7 @@
   cursor: pointer;
 }
 
-.primaryButton {
-  background-color: #007bff;
-  color: #fff;
-}
 
-.secondaryButton {
-  background-color: transparent;
-  color: #007bff;
-  border: 1px solid #007bff;
-}
 
 .profileContainer {
   text-align: center;
