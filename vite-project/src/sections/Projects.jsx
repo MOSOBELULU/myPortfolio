@@ -11,7 +11,8 @@ export default function Projects() {
     {
       title: "Next.js Blog",
       imageUrl: "/images/blog.png",
-      link: "https://blog-nextjs-project-csnb.vercel.app/"
+      link: "https://blog-nextjs-project-csnb.vercel.app/",
+      description: "This project is a dynamic, modern blog application built using Next.js. It leverages server-side rendering and static site generation for optimized performance and SEO. The blog features a responsive design ensuring accessibility across various devices."
     },
     {
       title: "Podcast App",
