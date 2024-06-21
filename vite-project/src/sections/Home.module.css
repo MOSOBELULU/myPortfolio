@@ -1,15 +1,36 @@
-/* CSS for Home.module.css */
-
 .section {
-  margin:  0;
-  /* border-radius: 20px 20px 10px 50px; */
+  position: relative;
+  background-color: #e78bdb;
+  margin: 0;
   color: #fff;
+  
+}
+
+.customShapeDividerBottom1718968028 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.customShapeDividerBottom1718968028 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 121px;
+}
+
+.shapeFill {
+  fill: rgb(7, 165, 165);
 }
 
 .centeredContainer {
   display: flex;
   align-items: center;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   min-height: 100vh;
   padding: 20px;
 }
@@ -42,7 +63,7 @@
 }
 
 .buttons {
-  display: flex;
+  display:flex;
   gap: 1rem;
 }
 
@@ -55,8 +76,6 @@
   border-radius: 5px;
   cursor: pointer;
 }
-
-
 
 .profileContainer {
   text-align: center;

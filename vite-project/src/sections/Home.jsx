@@ -7,6 +7,7 @@ export default function Home() {
     link.download = "Mosobe Lulu Resume";
     link.click();
   };
+
   return (
     <div className={classes.section} id="Home">
       <div className={classes.centeredContainer}>
@@ -24,8 +25,10 @@ export default function Home() {
               and NextJs make me a valuable asset to any software development
               project.
             </p>
-            <div >
-            <button onClick={handleDownload} className={classes.buttons}>Download My Resume</button>
+            <div>
+              <button onClick={handleDownload} className={classes.buttons}>
+                Download My Resume
+              </button>
             </div>
           </div>
         </div>
@@ -36,10 +39,7 @@ export default function Home() {
             alt="ProfilePic"
           />
           <div className={classes.icons}>
-            <a
-              className={classes.iconlink}
-              href="https://github.com/MOSOBELULU"
-            >
+            <a className={classes.iconlink} href="https://github.com/MOSOBELULU">
               <img src="/images/github (1).png" alt="GitHub" />
             </a>
             <a
@@ -53,6 +53,19 @@ export default function Home() {
             </a>
           </div>
         </div>
+      </div>
+      <div className={classes.customShapeDividerBottom1718968028}>
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            className={classes.shapeFill}
+          ></path>
+        </svg>
       </div>
     </div>
   );
