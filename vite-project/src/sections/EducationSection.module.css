@@ -1,8 +1,10 @@
 .EducationSection {
   padding: 40px;
-  background-color: #c9b041;
   color: #fff;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .EducationHeading {
@@ -11,50 +13,64 @@
   color: #ffffff;
 }
 
-.SectionContainer {
-  display: flex;
-  align-items: flex-start;
+.FlipCard {
+  background-color: transparent;
+  width: 70%;
+  height: 550px;
+  perspective: 100px;
 }
 
-.ImageContainer {
-  width: 40%; 
-  margin-right: 20px; 
+.FlipCardInner {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.FlipCard:hover .FlipCardInner {
+  transform: rotateY(180deg);
+}
+
+.FlipCardFront, .FlipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.FlipCardFront {
+  background-color: #fff;
+  color: black;
+}
+
+.FlipCardBack {
+  background-color: #ffffff;
+  color: rgb(10, 10, 10);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-bottom: 2px solid #444;
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-}
-
-.EducationList {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column; 
-  flex-grow: 1; 
-  gap: 20px; 
-}
-
-.EducationItem {
-  background-color: #c01313;
-  width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 10px;
-  
-}
-
-.EducationItem:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .Qualification, .Duration {
   font-size: 1rem;
   color: #d1d1d1;
   margin: 5px 0;
+}
+
+.EducationContent {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

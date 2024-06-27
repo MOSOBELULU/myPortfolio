@@ -2,12 +2,7 @@ import { skillsData } from "../Components/DummyData";
 import classes from './SkillSection.module.css';
 
 function SkillSection() {
-  // const images = {
-  //   TechnicalSkills: '/images/skillpage.png',
-  //   Frameworks: '/images/frameworks.png',
-  //   Database: '/images/Database.png',
-  //   SoftSkills: '/images/softskills.png'
-  // };
+ 
 
   return (
     <div className={classes.SkillSection}>

@@ -31,9 +31,10 @@
   .control input,
   .control textarea {
     display: block;
+    background-color: #585757;
     font: inherit;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
     padding: 0.25rem;
     width: 100%;
   }

@@ -21,7 +21,7 @@ export default function NavBar() {
                 <a href='#Projects'>
                 <FontAwesomeIcon icon={faCode} />   Projects
                 </a>
-                <a href='Contact'>
+                <a href='#Contact'>
                 <FontAwesomeIcon icon={faEnvelope} />   Contact
                 </a>
             
