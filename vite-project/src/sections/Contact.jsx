@@ -1,4 +1,4 @@
-import classes from './Contact.module.css'
+import classes from './Contact.module.css';
 
 export default function Contact() {
   return (
@@ -8,25 +8,25 @@ export default function Contact() {
       <p> Call me on: +27 76 527 5896</p>
       <p>Or Simply fill Out the Form Below</p>
       <form className={classes.form} action="https://formsubmit.co/mosobelulu@gmail.com" method="POST" >
-<div className={classes.control}>
-    <label htmlFor='name'>Name</label>
-    <input type='text' required id='name'/>
-</div>
+        <div className={classes.control}>
+          <label htmlFor='name'>Name</label>
+          <input type='text' required id='name' name='name' autoComplete='name' />
+        </div>
 
-<div className={classes.control}>
-    <label htmlFor='surname'>Surname</label>
-    <input type='text' required id='surname' />
-</div>
+        <div className={classes.control}>
+          <label htmlFor='surname'>Surname</label>
+          <input type='text' required id='surname' name='surname' autoComplete='family-name' />
+        </div>
 
-<div className={classes.control}>
-    <label htmlFor='description'>Leave a message for me</label>
-    <textarea id='description' required rows='5' ></textarea>
-</div>
+        <div className={classes.control}>
+          <label htmlFor='description'>Leave a message for me</label>
+          <textarea id='description' required rows='5' name='description' autoComplete='off'></textarea>
+        </div>
 
-<div className={classes.actions}>
-    <button>Submit</button>
-</div>
-        </form>
+        <div className={classes.actions}>
+          <button>Submit</button>
+        </div>
+      </form>
     </div>
-  )
+  );
 }

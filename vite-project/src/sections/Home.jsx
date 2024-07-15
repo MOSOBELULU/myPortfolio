@@ -49,7 +49,7 @@ export default function Home() {
               <img src="/images/linkedin (1).png" alt="LinkedIn" />
             </a>
             <a className={classes.iconlink} href="https://wa.me/C2IKIHH3LESAM1">
-              <img src="public/images/whatsapp.png" alt="WhatsApp" />
+              <img src="/images/whatsapp.png" alt="WhatsApp" />
             </a>
           </div>
         </div>
