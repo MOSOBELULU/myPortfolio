@@ -13,7 +13,7 @@ export default function Home() {
       <div className={classes.centeredContainer}>
         <div className={classes.textContent}>
           <div className={classes.headerSection}>
-            <h1>Lulu</h1>
+            <h1>Lulu Mosobe</h1>
             <h2>Software Developer</h2>
             <p>
               As a highly motivated and quick learner, I am enthusiastic about

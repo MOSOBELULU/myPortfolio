@@ -1,8 +1,7 @@
 .section {
   position: relative;
-  background-color: #000000;
+  background-color: rgb(184, 177, 174);
   margin: 0;
-  color: #fff;
   
 }
 
@@ -24,7 +23,7 @@
 }
 
 .shapeFill {
-  fill: rgb(7, 165, 165);
+  fill: rgb(28, 27, 95);
 }
 
 .centeredContainer {
@@ -44,21 +43,21 @@
 }
 
 .headerSection h1 {
-  color: #fff;
+  color: #000000;
   font-size: 3rem;
   margin-bottom: 0.5rem;
 }
 
 .headerSection h2 {
   font-size: 2rem;
-  color: #d1d1d1;
+  color: #080808;
   margin-bottom: 1rem;
 }
 
 .headerSection p {
   font-size: 1.2rem;
   line-height: 1.5;
-  color: #d1d1d1;
+  color: rgb(28, 27, 95);
   margin-bottom: 2rem;
 }
 
@@ -68,7 +67,7 @@
 }
 
 .buttons {
-  background-color: #007bff;
+  background-color: #27415e;
   color: #f8f6f6;
   padding: 10px 20px;
   font-size: 1rem;
@@ -94,11 +93,13 @@
   display: flex;
   justify-content: center;
   gap: 10px;
+  background-color: rgb(28, 27, 95)
 }
 
 .icons img {
   width: 30px;
   height: 30px;
+  
 }
 
 .iconlink img {

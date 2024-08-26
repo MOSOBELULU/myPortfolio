@@ -45,7 +45,7 @@
 }
 
 .FlipCardBack {
-  background-color: #ffffff;
+  background-color: rgb(184, 177, 174);
   color: rgb(10, 10, 10);
   transform: rotateY(180deg);
   display: flex;
@@ -63,7 +63,7 @@
 
 .Qualification, .Duration {
   font-size: 1rem;
-  color: #d1d1d1;
+  color: #000000;
   margin: 5px 0;
 }
 
